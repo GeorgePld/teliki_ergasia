@@ -1,0 +1,230 @@
+<html>
+
+<head>
+    <script src="p5.min.js"></script>
+	<script src="p5.sound.js"></script>
+</head>
+
+<body>
+</body>
+
+<script>
+    let clear;
+    let envelope;
+    let synth;
+	let noiseLevel = 1000;
+
+    function setup() 
+	{
+	clear = createImg("olo.png"); 
+	clear.position(50, 50);
+	}
+   
+     function keyPressed() 
+	 {
+        if (key === 'z') 
+		{ 
+            clear.attribute("src", "C1.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('C4', 1, 0);
+        }
+		else if (key === 'x') 
+		{ 
+            clear.attribute("src", "D1.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('D4', 1, 0);
+        }
+		else if (key === 'c') 
+		{ 
+            clear.attribute("src", "E1.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('E4', 1, 0);
+        }
+		else if (key === 'v') 
+		{ 
+            clear.attribute("src", "F1.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('F4', 1, 0);
+        }
+		else if (key === 'b') 
+		{ 
+            clear.attribute("src", "G1.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('G4', 1, 0);
+        }
+		else if (key === 'n') 
+		{ 
+            clear.attribute("src", "A1.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('A5', 1, 0);
+        }
+		else if (key === 'm') 
+		{ 
+            clear.attribute("src", "B1.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('B5', 1, 0);
+        }
+		else if (key === 'a') 
+		{ 
+            clear.attribute("src", "C2.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('C5', 1, 0);
+        }
+		else if (key === 's') 
+		{ 
+            clear.attribute("src", "D2.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('D5', 1, 0);
+        }
+		else if (key === 'd') 
+		{ 
+            clear.attribute("src", "E2.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('E5', 1, 0);
+        }
+		else if (key === 'f') 
+		{ 
+            clear.attribute("src", "F2.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('F5', 1, 0);
+        }
+		else if (key === 'g') 
+		{ 
+            clear.attribute("src", "G2.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('G5', 1, 0);
+        }
+		else if (key === 'h') 
+		{ 
+            clear.attribute("src", "A2.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('A6', 1, 0);
+        }
+		else if (key === 'j') 
+		{ 
+            clear.attribute("src", "B2.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('B6', 1, 0);
+        }
+		else if (key === '1') 
+		{ 
+            clear.attribute("src", "y1.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('C#4', 1, 0);
+        }
+		else if (key === '2') 
+		{ 
+            clear.attribute("src", "y2.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('D#4', 1, 0);
+        }
+		else if (key === '3') 
+		{ 
+            clear.attribute("src", "y3.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('F#4', 1, 0);
+        }
+		else if (key === '4') 
+		{ 
+            clear.attribute("src", "y4.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('G#4', 1, 0);
+        }
+		else if (key === '5') 
+		{ 
+            clear.attribute("src", "y5.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('A#4', 1, 0);
+        }
+		else if (key === '6') 
+		{ 
+            clear.attribute("src", "y6.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('C#5', 1, 0);
+        }
+		else if (key === '7') 
+		{ 
+            clear.attribute("src", "y7.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('D#5', 1, 0);
+        }
+		else if (key === '8') 
+		{ 
+            clear.attribute("src", "y8.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('F#5', 1, 0);
+        }
+		else if (key === '9') 
+		{ 
+            clear.attribute("src", "y9.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('G#5', 1, 0);
+        }
+		else if (key === '0') 
+		{ 
+            clear.attribute("src", "y10.png");
+			synth = new p5.PolySynth();
+            synth.setADSR(0.2, 1, 0);
+			userStartAudio();
+            synth.play('A#5', 1, 0);
+        }
+    }
+
+    function keyReleased() 
+	{
+        if (key === 'x' || key === 'c') 
+		{ 
+            clear.attribute("src", "olo.png"); 
+        }
+    }
+
+    
+</script>
+
+</html>
